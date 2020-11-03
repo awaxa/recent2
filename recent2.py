@@ -44,7 +44,7 @@ class DB:
         insert into commands
             (command_dt,command,pid,return_val,pwd,session,json_data)
             values (
-                datetime(?, 'unixepoch'), -- command_dt
+                datetime(?, 'unixepoch', 'localtime'), -- command_dt
                 ?, -- command
                 ?, -- pid
                 ?, -- return_val
