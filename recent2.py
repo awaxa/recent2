@@ -490,7 +490,7 @@ def make_arg_parser_for_recent():
                         '-cl',
                         metavar='200',
                         help='Ignore commands longer than this.',
-                        default=400)
+                        default=2**21)
     parser.add_argument('--env',
                         '-e',
                         action='append',
