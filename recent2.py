@@ -399,7 +399,7 @@ def query_builder(args, failure_exit_func):
         filters.append('return_val == ?')
         parameters.append(args.status_num)
     if not args.return_self:
-        # Dont return recent commands unless user asks for it.
+        # Don't return recent commands unless user asks for it.
         filters.append("""command not like 'recent%'""")
     if args.pattern:
         if args.re:
@@ -501,7 +501,7 @@ def make_arg_parser_for_recent():
     # Hide time. This makes copy-pasting simpler.
     parser.add_argument('--hide_time',
                         '-ht',
-                        help='dont display time in command output',
+                        help='don\'t display time in command output',
                         action='store_true')
     parser.add_argument('--time_first', '-tf', help='Print time first', action='store_true')
     parser.add_argument('--debug', help='Debug mode', action='store_true')
