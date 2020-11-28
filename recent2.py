@@ -517,6 +517,8 @@ def make_arg_parser_for_recent():
     parser.add_argument('-sql', help='enable sqlite search pattern', action='store_true')
     parser.add_argument('--nocase',
                         '-nc',
+                        '--ignore-case',
+                        '-i',
                         help='Ignore case when searching for patterns',
                         action='store_true')
     return parser
