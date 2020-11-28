@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# PYTHON_ARGCOMPLETE_OK
+import argcomplete
 import argparse
 import hashlib
 import json
@@ -523,6 +525,7 @@ def make_arg_parser_for_recent():
                         '-i',
                         help='Ignore case when searching for patterns',
                         action='store_true')
+    argcomplete.autocomplete(parser)
     return parser
 
 
