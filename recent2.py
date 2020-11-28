@@ -478,6 +478,8 @@ def make_arg_parser_for_recent():
                         help='Returns commands only from current session',
                         action='store_true')
     parser.add_argument('-d',
+                        '--date',
+                        dest='d',
                         metavar='2016-10-01',
                         help='date in YYYY-MM-DD, YYYY-MM, or YYYY format',
                         default='')
